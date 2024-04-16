@@ -1,0 +1,45 @@
+.carousel {
+  margin-top: 50px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: $blue-color;
+    &__text {
+      text-align: center;
+    }
+    &__icon {
+      color: $orange-color;
+
+      &__background {
+        background-color: #f0f0f0;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__control {
+    background: none;
+    color: $orange-color;
+  }
+}
+
+.active-slide {
+  display: flex;
+}
+.inactive-slide {
+  display: none;
+}

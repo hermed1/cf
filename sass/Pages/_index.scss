@@ -1,0 +1,71 @@
+.main {
+  background-color: rgb(255, 254, 253);
+}
+
+.comprendre {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: $blue-color;
+  }
+  &__content {
+    line-height: 1.2;
+  }
+  &__image {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.publics {
+  &__title {
+    font-size: 25px;
+    color: $blue-color;
+    text-align: center;
+    position: relative;
+  }
+}
+.underline {
+  position: absolute;
+  bottom: -8px;
+  left: 39%;
+  height: 5px;
+  width: 25%;
+  background-color: $blue-color;
+}
+
+.cta-section {
+  margin-top: 50px;
+  position: relative;
+  &__banner {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    opacity: 1;
+  }
+  &__container {
+    padding: 20px;
+    position: absolute;
+    color: white;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+      font-weight: 500;
+    }
+    &__text {
+      font-weight: 500;
+      text-shadow: 1px 1px 3px #181818;
+      font-size: 18px;
+    }
+  }
+  &__btn {
+  }
+}

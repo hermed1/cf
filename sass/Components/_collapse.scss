@@ -1,0 +1,46 @@
+.collapse {
+  margin-top: 50px;
+  padding: 0 20px;
+
+  &__item {
+    border: rgb(244, 243, 243) solid;
+    box-shadow: 0 0 1px rgb(220, 219, 219);
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0 20px;
+  }
+
+  &__btn {
+    background: none;
+    border: none;
+    color: $blue-color;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+  &__icon {
+    transition: transform 0.3s ease-in-out;
+    color: $orange-color;
+  }
+
+  &__content {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  &__inner {
+    padding-top: 15px;
+  }
+}

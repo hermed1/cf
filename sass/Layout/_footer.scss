@@ -1,0 +1,44 @@
+.footer {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  &__container {
+  }
+  &__logos {
+  }
+  &__logosx2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  &__logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    &--large {
+      min-width: 250px;
+    }
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+  &__bottom__container {
+    margin-top: 20px;
+    background-color: #28242c;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  &__link {
+    margin-bottom: 20px;
+  }
+  &__img {
+    width: 65%;
+    max-width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    &__container {
+      padding-left: 20px;
+    }
+  }
+}
