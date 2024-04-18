@@ -49,13 +49,13 @@ h6 {
 ::-moz-placeholder {
   color: #ffffff;
   opacity: 1; /* Firefox */
-  font-size: 20px;
+  font-size: 16px;
 }
 
 ::placeholder {
   color: #ffffff;
   opacity: 1; /* Firefox */
-  font-size: 20px;
+  font-size: 16px;
 }
 
 :-ms-input-placeholder {
@@ -77,7 +77,7 @@ h6 {
 }
 
 .menu__logo {
-  width: 65%;
+  width: 225px;
   max-width: 400px;
   height: 50px;
 }
@@ -175,6 +175,12 @@ h6 {
   background-color: #cfd8dc;
 }
 
+.form__container {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+}
+
 .banner {
   height: 700px;
   width: calc(100% + 20px);
@@ -184,11 +190,7 @@ h6 {
   margin-right: -20px;
 }
 .banner__form {
-  position: absolute;
   min-width: 330px;
-  width: 60%;
-  top: 50px;
-  right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,6 +198,10 @@ h6 {
   border-radius: 10px;
   padding: 20px;
   border: #ffffff solid 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .banner__form__input {
   margin-bottom: 15px;
@@ -213,7 +219,7 @@ h6 {
 }
 .banner__form__input--submit {
   background-color: #f46d21;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   border: none;
   margin: 30px 0;
@@ -221,7 +227,7 @@ h6 {
 }
 .banner__form__title {
   color: #ffffff;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -235,53 +241,22 @@ h6 {
 .cta {
   background-color: #f46d21;
   border: none;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   margin-top: 30px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-  min-width: 300px;
-  width: 100%;
-  padding: 20px;
-  background-color: #ffffff;
-  border: rgb(223, 217, 217) 1px solid;
-  box-shadow: 0px 0px 5px rgb(236, 236, 236);
-}
-.card__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.card__title {
-  font-size: 30px;
-  font-weight: bold;
-  color: #217bf4;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.card__content {
-  margin-bottom: 20px;
   text-align: center;
 }
 
 .carousel {
   margin-top: 50px;
-  padding: 0 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  position: relative;
 }
 .carousel__slide {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   min-width: 300px;
   margin-bottom: 50px;
   font-size: 20px;
@@ -306,6 +281,14 @@ h6 {
 .carousel__control {
   background: none;
   color: #f46d21;
+  position: absolute;
+  top: 50%;
+}
+.carousel__control--prev {
+  left: 10%;
+}
+.carousel__control--next {
+  right: 10%;
 }
 
 .active-slide {
@@ -366,13 +349,13 @@ h6 {
   margin-bottom: 20px;
 }
 .footer__logo {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 95px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .footer__logo--large {
-  min-width: 250px;
+  min-width: 230px;
 }
 .footer__text {
   margin-bottom: 20px;
@@ -389,8 +372,7 @@ h6 {
   margin-bottom: 20px;
 }
 .footer__img {
-  width: 65%;
-  max-width: 400px;
+  width: 225px;
   height: 50px;
   margin-top: 20px;
 }
@@ -422,6 +404,39 @@ h6 {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.comprendre__image__container {
+  width: 60%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  min-width: 300px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border: rgb(223, 217, 217) 1px solid;
+  box-shadow: 0px 0px 5px rgb(236, 236, 236);
+  border-radius: 10px;
+}
+.card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.card__title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #217bf4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card__content {
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 .publics__title {
   font-size: 25px;
@@ -445,13 +460,13 @@ h6 {
 }
 .cta-section__banner {
   width: 100%;
-  height: 400px;
+  height: 370px;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 1;
 }
 .cta-section__container {
-  padding: 20px;
+  padding: 30px;
   position: absolute;
   color: white;
   top: 0px;
@@ -462,9 +477,10 @@ h6 {
 }
 .cta-section__container__title {
   font-weight: 500;
+  font-size: 20px;
 }
 .cta-section__container__text {
   font-weight: 500;
   text-shadow: 1px 1px 3px #181818;
-  font-size: 18px;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */

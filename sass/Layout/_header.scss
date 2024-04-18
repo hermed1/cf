@@ -3,7 +3,7 @@
 }
 .menu {
   &__logo {
-    width: 65%;
+    width: 225px;
     max-width: 400px;
     height: 50px;
   }
@@ -109,6 +109,11 @@
   background-color: #cfd8dc;
 }
 
+.form__container {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+}
 .banner {
   height: 700px;
   width: calc(100% + 20px); //
@@ -118,11 +123,7 @@
   &__container {
   }
   &__form {
-    position: absolute;
     min-width: 330px;
-    width: 60%;
-    top: 50px;
-    right: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,6 +131,11 @@
     border-radius: 10px;
     padding: 20px;
     border: #ffffff solid 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     &__input {
       margin-bottom: 15px;
       padding: 20px;
@@ -145,7 +151,7 @@
       }
       &--submit {
         background-color: $orange-color;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
         border: none;
         margin: 30px 0;
@@ -154,7 +160,7 @@
     }
     &__title {
       color: #ffffff;
-      font-size: 21px;
+      font-size: 20px;
       font-weight: bold;
       margin-bottom: 30px;
     }
