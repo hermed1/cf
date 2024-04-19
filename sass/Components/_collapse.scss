@@ -16,7 +16,7 @@
     color: $blue-color;
     width: 100%;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
     text-align: left;
     padding: 15px 0;
     display: flex;
@@ -41,6 +41,8 @@
   }
 
   &__inner {
-    padding-top: 15px;
+    p {
+      padding-bottom: 20px;
+    }
   }
 }

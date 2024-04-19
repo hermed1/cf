@@ -14,7 +14,7 @@
     color: $blue-color;
   }
   &__content {
-    line-height: 1.2;
+    line-height: 1.4;
   }
   &__image {
     width: 100%;
@@ -79,7 +79,7 @@
     width: 100%;
     height: 370px;
     object-fit: cover;
-    opacity: 1;
+    filter: brightness(55%);
   }
   &__container {
     padding: 30px;
