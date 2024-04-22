@@ -81,7 +81,16 @@ p {
 }
 
 .menu__logo {
+  display: inline-block;
   width: 60%;
+}
+@media screen and (min-width: 992px) {
+  .menu__logo {
+    width: 20%;
+  }
+}
+.menu__logo--img {
+  width: 100%;
   max-width: 350px;
   height: 50px;
   -o-object-fit: contain;
@@ -90,7 +99,6 @@ p {
 
 #menu__toggle {
   opacity: 0;
-  border: red solid;
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
@@ -117,11 +125,16 @@ p {
   align-items: center;
   position: absolute;
   top: 30px;
-  right: 50px;
+  right: 20px;
   width: 40px;
   height: 40px;
   cursor: pointer;
-  z-index: 3;
+  z-index: 10;
+}
+@media screen and (min-width: 992px) {
+  .menu__btn {
+    display: none;
+  }
 }
 
 .menu__btn > span,
@@ -164,7 +177,34 @@ p {
   align-items: center;
   background-color: rgb(55, 69, 113);
   transition-duration: 0.25s;
-  z-index: 2;
+  z-index: 5;
+}
+@media screen and (min-width: 992px) {
+  .menu__box {
+    visibility: visible;
+    left: 0;
+    background-color: #ffffff;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    position: unset;
+    box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 20px 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hamburger-menu {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .menu__item {
@@ -176,19 +216,37 @@ p {
   transition-duration: 0.25s;
   color: white;
 }
-
-.menu__item:hover {
-  background-color: #cfd8dc;
+@media screen and (min-width: 992px) {
+  .menu__item {
+    color: black;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu__item--contact {
+    background-color: #f46d21;
+    color: #ffffff;
+    padding: 5px 30px;
+    font-weight: 500;
+    border-radius: 5px;
+  }
 }
 
 .form__container {
   position: absolute;
-  top: 50%;
+  top: 57%;
   left: 47%;
+}
+@media screen and (min-width: 992px) {
+  .form__container {
+    top: auto;
+    left: auto;
+    top: 6%;
+    right: 15%;
+  }
 }
 
 .banner {
-  height: 800px;
+  height: 650px;
   width: calc(100% + 20px);
   -o-object-fit: cover;
      object-fit: cover;
@@ -197,6 +255,7 @@ p {
 }
 .banner__form {
   min-width: 330px;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,14 +268,49 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 768px) {
+  .banner__form {
+    position: relative;
+    width: 60%;
+    left: 4%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner__form {
+    transform: none;
+  }
+}
 .banner__form__h1 {
   color: #217bf4;
   padding: 0 40px 20px 20px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  text-align: justify;
+  text-align: left;
+  width: 80%;
+  min-width: 350px;
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .banner__form__h1 {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner__form__h1 {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 600;
+    width: 55%;
+    padding-left: 10%;
+    color: #f68d52;
+  }
 }
 .banner__form__input {
+  cursor: pointer;
   margin-bottom: 15px;
   padding: 20px;
   margin-bottom: 20px;
@@ -246,9 +340,16 @@ p {
 }
 .banner__form__section {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .banner__form label {
   width: 90%;
+}
+
+.menu__item.active {
+  color: blue;
 }
 
 .cta {
@@ -263,7 +364,7 @@ p {
 }
 
 .carousel {
-  margin-top: 50px;
+  margin: 50px 0;
   position: relative;
 }
 .carousel__slide {
@@ -300,8 +401,18 @@ p {
 .carousel__control--prev {
   left: 10%;
 }
+@media screen and (min-width: 768px) {
+  .carousel__control--prev {
+    left: 25%;
+  }
+}
 .carousel__control--next {
   right: 10%;
+}
+@media screen and (min-width: 768px) {
+  .carousel__control--next {
+    right: 25%;
+  }
 }
 
 .active-slide {
@@ -313,7 +424,7 @@ p {
 }
 
 .collapse {
-  margin-top: 50px;
+  margin: 50px 0;
   padding: 0 20px;
 }
 .collapse__item {
@@ -356,10 +467,20 @@ p {
   margin-top: 20px;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer__logos {
+    padding: 0 5%;
+  }
+}
 .footer__logosx2 {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer__logosx2 {
+    margin-bottom: 50px;
+  }
 }
 .footer__logo {
   width: 70px;
@@ -367,8 +488,19 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    width: 90px;
+    height: 110px;
+  }
+}
 .footer__logo--large {
   min-width: 210px;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo--large {
+    min-width: 300px;
+  }
 }
 .footer__text {
   margin-bottom: 20px;
@@ -407,14 +539,25 @@ p {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .comprendre {
+    margin-top: 20px;
+  }
+}
 .comprendre__title {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 30px;
   color: #217bf4;
 }
 .comprendre__content {
   line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .comprendre__content {
+    width: 80%;
+    margin-bottom: 50px;
+  }
 }
 .comprendre__image {
   width: 100%;
@@ -423,6 +566,12 @@ p {
 }
 .comprendre__image__container {
   width: 60%;
+}
+@media screen and (min-width: 768px) {
+  .comprendre__image__container {
+    margin-top: 80px;
+    width: 50%;
+  }
 }
 
 .card {
@@ -435,13 +584,13 @@ p {
   background-color: #ffffff;
   border: rgb(223, 217, 217) 1px solid;
   box-shadow: 0px 0px 5px rgb(236, 236, 236);
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .card__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 .card__title {
   font-size: 30px;
@@ -451,8 +600,12 @@ p {
   margin-bottom: 20px;
 }
 .card__content {
-  margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .card__content {
+    text-align: center;
+  }
 }
 
 .publics__title {
@@ -470,6 +623,12 @@ p {
   width: 25%;
   background-color: #217bf4;
 }
+@media screen and (min-width: 768px) {
+  .underline {
+    width: 13%;
+    left: 44%;
+  }
+}
 
 .cta-section {
   margin-top: 50px;
@@ -477,7 +636,7 @@ p {
 }
 .cta-section__banner {
   width: 100%;
-  height: 370px;
+  height: 330px;
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(55%);
@@ -486,11 +645,18 @@ p {
   padding: 30px;
   position: absolute;
   color: white;
-  top: 0px;
+  top: 6%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .cta-section__container {
+    top: 45px;
+    left: 10%;
+    width: 80%;
+  }
 }
 .cta-section__container__title {
   font-weight: 500;

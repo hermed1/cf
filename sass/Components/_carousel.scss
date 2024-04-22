@@ -1,5 +1,5 @@
 .carousel {
-  margin-top: 50px;
+  margin: 50px 0;
   position: relative;
   &__slide {
     display: flex;
@@ -34,9 +34,15 @@
     top: 50%;
     &--prev {
       left: 10%;
+      @media screen and (min-width: 768px) {
+        left: 25%;
+      }
     }
     &--next {
       right: 10%;
+      @media screen and (min-width: 768px) {
+        right: 25%;
+      }
     }
   }
 }

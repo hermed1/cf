@@ -4,18 +4,31 @@
   &__container {
   }
   &__logos {
+    @media screen and (min-width: 768px) {
+      padding: 0 5%;
+    }
   }
   &__logosx2 {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+    }
   }
   &__logo {
     width: 70px;
     height: 80px;
     object-fit: cover;
+    @media screen and (min-width: 768px) {
+      width: 90px;
+      height: 110px;
+    }
     &--large {
       min-width: 210px;
+      @media screen and (min-width: 768px) {
+        min-width: 300px;
+      }
     }
   }
   &__text {
