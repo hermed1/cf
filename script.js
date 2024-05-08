@@ -140,3 +140,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+//handle back to top arrow
+document.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+  const backToTopBtn = document.getElementById('backToTopBtn');
+
+  if (scrollPosition > 500) {
+    backToTopBtn.style.display = 'block';
+  } else {
+    backToTopBtn.style.display = 'none';
+  }
+});
+
+document.getElementById('backToTopBtn').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
