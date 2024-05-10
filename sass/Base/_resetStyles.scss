@@ -14,7 +14,7 @@ a {
   color: unset;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
@@ -65,4 +65,7 @@ h6 {
 
 p {
   line-height: 1.2;
+  @media screen and (min-width: 992px) {
+    font-size: 18px;
+  }
 }

@@ -1,5 +1,8 @@
 .header {
   padding: 20px 0px 0px 20px;
+  @media screen and (min-width: 992px) {
+    padding: 20px 0;
+  }
 }
 .menu {
   &__logo {
@@ -42,10 +45,10 @@
   align-items: center;
   position: absolute;
   top: 30px;
-  right: 20px;
+  right: 30px;
 
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 
   cursor: pointer;
   z-index: 10;
@@ -125,6 +128,7 @@
   @media screen and (min-width: 992px) {
     display: flex;
     justify-content: center;
+    width: 42%;
   }
 }
 .menu__item {
@@ -140,6 +144,12 @@
   color: white;
   @media screen and (min-width: 992px) {
     color: black;
+    &:not(&--contact):hover {
+      color: $blue-color;
+      background-color: rgba(0, 0, 0, 0.02);
+      border-radius: 10px;
+      transition: all ease-in 300ms;
+    }
   }
   &--contact {
     background-color: $orange-color;
@@ -150,6 +160,10 @@
       padding: 5px 30px;
       font-weight: 500;
       border-radius: 5px;
+      &:hover {
+        filter: brightness(110%);
+        transition: all ease-in 300ms;
+      }
     }
   }
 }
@@ -168,7 +182,7 @@
   @media screen and (min-width: 992px) {
     top: auto;
     left: auto;
-    top: 6%;
+    top: 3vh;
     right: 15%;
   }
 }
@@ -179,13 +193,19 @@
   margin-left: -20px;
   margin-right: -20px;
   @media screen and (min-width: 992px) {
-    filter: brightness(80%);
-    width: calc(100vw + 20px);
+    filter: brightness(60%);
+    width: 100%;
     color: black;
     z-index: 1;
+    margin-left: 0;
+    margin-right: 0;
+    height: 70vh;
   }
 
   &__container {
+    @media screen and (min-width: 992px) {
+      width: 100%;
+    }
   }
   &__form {
     min-width: 330px;
@@ -226,14 +246,15 @@
       @media screen and (min-width: 992px) {
         position: absolute;
         left: 0;
-        top: 10%;
+        top: 30%;
         text-align: left;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 600;
         width: 55%;
         padding-left: 10%;
-        color: lighten($orange-color, 10%);
+        color: #ffffff;
         z-index: 5;
+        text-shadow: 1px 0px 1px $blue-color;
       }
     }
 
@@ -254,7 +275,7 @@
       &--submit {
         background-color: $orange-color;
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 500;
         border: none;
         margin: 30px 0;
         padding: 10px;
@@ -265,6 +286,10 @@
       font-size: 18px;
       font-weight: bold;
       margin-bottom: 20px;
+      @media screen and (min-width: 992px) {
+        font-size: 22px;
+        font-weight: 600;
+      }
     }
     &__section {
       position: relative;
@@ -279,5 +304,5 @@
 }
 
 .menu__item.active {
-  color: blue;
+  text-decoration: underline;
 }

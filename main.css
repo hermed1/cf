@@ -15,7 +15,7 @@ a {
   color: unset;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 input,
@@ -76,9 +76,19 @@ h6 {
 p {
   line-height: 1.2;
 }
+@media screen and (min-width: 992px) {
+  p {
+    font-size: 18px;
+  }
+}
 
 .header {
   padding: 20px 0px 0px 20px;
+}
+@media screen and (min-width: 992px) {
+  .header {
+    padding: 20px 0;
+  }
 }
 
 .menu__logo {
@@ -126,9 +136,9 @@ p {
   align-items: center;
   position: absolute;
   top: 30px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
+  right: 30px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   z-index: 10;
 }
@@ -205,6 +215,7 @@ p {
   .hamburger-menu {
     display: flex;
     justify-content: center;
+    width: 42%;
   }
 }
 
@@ -221,6 +232,12 @@ p {
   .menu__item {
     color: black;
   }
+  .menu__item:not(.menu__item--contact):hover {
+    color: #217bf4;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    transition: all ease-in 300ms;
+  }
 }
 .menu__item--contact {
   background-color: #f46d21;
@@ -234,6 +251,10 @@ p {
     font-weight: 500;
     border-radius: 5px;
   }
+  .menu__item--contact:hover {
+    filter: brightness(110%);
+    transition: all ease-in 300ms;
+  }
 }
 
 .form__container {
@@ -245,7 +266,7 @@ p {
   .form__container {
     top: auto;
     left: auto;
-    top: 6%;
+    top: 3vh;
     right: 15%;
   }
 }
@@ -260,10 +281,18 @@ p {
 }
 @media screen and (min-width: 992px) {
   .banner {
-    filter: brightness(80%);
-    width: calc(100vw + 20px);
+    filter: brightness(60%);
+    width: 100%;
     color: black;
     z-index: 1;
+    margin-left: 0;
+    margin-right: 0;
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner__container {
+    width: 100%;
   }
 }
 .banner__form {
@@ -314,14 +343,15 @@ p {
   .banner__form__h1 {
     position: absolute;
     left: 0;
-    top: 10%;
+    top: 30%;
     text-align: left;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
     width: 55%;
     padding-left: 10%;
-    color: #f68d52;
+    color: #ffffff;
     z-index: 5;
+    text-shadow: 1px 0px 1px #217bf4;
   }
 }
 .banner__form__input {
@@ -342,7 +372,7 @@ p {
 .banner__form__input--submit {
   background-color: #f46d21;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   border: none;
   margin: 30px 0;
   padding: 10px;
@@ -352,6 +382,12 @@ p {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .banner__form__title {
+    font-size: 22px;
+    font-weight: 600;
+  }
 }
 .banner__form__section {
   position: relative;
@@ -364,23 +400,36 @@ p {
 }
 
 .menu__item.active {
-  color: blue;
+  text-decoration: underline;
 }
 
 .cta {
   background-color: #f46d21;
   border: none;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 16px;
   color: #ffffff;
   margin-top: 30px;
   text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cta:hover {
+  box-shadow: 0px 0px 5px #217bf4;
+  filter: brightness(110%);
+  font-weight: 600;
+  transition: all ease-out 300ms;
 }
 
 .carousel {
   margin: 50px 0;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .carousel {
+    margin: 100px 0;
+  }
 }
 .carousel__slide {
   display: flex;
@@ -477,6 +526,7 @@ p {
 }
 .collapse__inner p {
   padding-bottom: 20px;
+  line-height: 1.4;
 }
 
 .footer {
@@ -530,6 +580,11 @@ p {
   padding: 20px;
   padding-top: 40px;
 }
+@media screen and (min-width: 768px) {
+  .footer__bottom__container {
+    padding: 30px;
+  }
+}
 .footer__link {
   margin-bottom: 20px;
 }
@@ -544,6 +599,11 @@ p {
 }
 .footer__img__container {
   padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer__img__container {
+    padding-left: 30px;
+  }
 }
 
 #backToTopBtn {
@@ -591,11 +651,21 @@ p {
     margin-top: 20px;
   }
 }
+@media screen and (min-width: 992px) {
+  .comprendre {
+    margin-top: 0;
+  }
+}
 .comprendre__title {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 30px;
   color: #217bf4;
+}
+@media screen and (min-width: 992px) {
+  .comprendre__title {
+    font-size: 24px;
+  }
 }
 .comprendre__content {
   line-height: 1.4;
@@ -604,6 +674,11 @@ p {
   .comprendre__content {
     width: 80%;
     margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  .comprendre__content {
+    margin-bottom: 20px;
   }
 }
 .comprendre__image {
@@ -685,6 +760,11 @@ p {
   margin-top: 50px;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .cta-section {
+    margin-top: 100px;
+  }
+}
 .cta-section__banner {
   width: 100%;
   height: 330px;
@@ -704,7 +784,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .cta-section__container {
-    top: 45px;
+    top: 80px;
     left: 10%;
     width: 80%;
   }

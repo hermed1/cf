@@ -127,7 +127,7 @@ handleCollapse();
 
 document.addEventListener('DOMContentLoaded', function () {
   const menuItems = document.querySelectorAll('.menu__item');
-  const currentPath = window.location.pathname; // Utilise seulement le chemin de l'URL, pas le domaine
+  const currentPath = window.location.pathname;
 
   menuItems.forEach((item) => {
     if (
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ) {
       item.classList.add('active');
     } else {
-      item.classList.remove('active'); // Assurez-vous de supprimer la classe si elle n'est pas sur la page actuelle
+      item.classList.remove('active');
     }
   });
 });
