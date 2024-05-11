@@ -287,7 +287,7 @@ p {
     z-index: 1;
     margin-left: 0;
     margin-right: 0;
-    height: 70vh;
+    height: 75vh;
   }
 }
 @media screen and (min-width: 992px) {
@@ -443,12 +443,18 @@ p {
 .carousel__slide__text {
   text-align: center;
   font-size: 16px;
+  font-weight: 500;
+}
+@media screen and (min-width: 992px) {
+  .carousel__slide__text {
+    font-size: 18px;
+  }
 }
 .carousel__slide__icon {
   color: #f46d21;
 }
 .carousel__slide__icon__background {
-  background-color: #f0f0f0;
+  background-color: #f5f5f5;
   width: 100px;
   height: 100px;
   margin-bottom: 40px;
@@ -462,6 +468,7 @@ p {
   color: #f46d21;
   position: absolute;
   top: 50%;
+  cursor: pointer;
 }
 .carousel__control--prev {
   left: 10%;
@@ -654,6 +661,8 @@ p {
 @media screen and (min-width: 992px) {
   .comprendre {
     margin-top: 0;
+    padding: 0 15%;
+    padding-top: 30px;
   }
 }
 .comprendre__title {
@@ -665,6 +674,7 @@ p {
 @media screen and (min-width: 992px) {
   .comprendre__title {
     font-size: 24px;
+    margin-bottom: 30px;
   }
 }
 .comprendre__content {
@@ -676,9 +686,31 @@ p {
     margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .comprendre__content {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    line-height: 1.1;
+  }
+}
+.comprendre__content__and__image__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .comprendre__content__and__image__container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.comprendre__content__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .comprendre__content__container {
+    align-items: flex-start;
   }
 }
 .comprendre__image {
@@ -686,12 +718,24 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (min-width: 992px) {
+  .comprendre__image {
+    width: 300px;
+    height: 300px;
+  }
+}
 .comprendre__image__container {
   width: 60%;
 }
 @media screen and (min-width: 768px) {
   .comprendre__image__container {
     margin-top: 80px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .comprendre__image__container {
+    margin-top: 0;
     width: 50%;
   }
 }
@@ -704,16 +748,32 @@ p {
   width: 100%;
   padding: 20px;
   background-color: #ffffff;
-  border: rgb(223, 217, 217) 1px solid;
-  box-shadow: 0px 0px 5px rgb(236, 236, 236);
+  border: rgb(245, 240, 240) 3px solid;
+  box-shadow: 0px 0px 5px rgb(240, 230, 230);
   border-radius: 8px;
   text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .card {
+    width: 30%;
+    max-width: 500px;
+    height: 200px;
+    justify-content: space-around;
+    padding: 50px;
+  }
 }
 .card__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 50px 0;
+}
+@media screen and (min-width: 992px) {
+  .card__container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 0;
+  }
 }
 .card__title {
   font-size: 25px;
@@ -740,6 +800,11 @@ p {
   position: relative;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 992px) {
+  .publics__title {
+    font-size: 24px;
+  }
+}
 
 .underline {
   position: absolute;
@@ -748,11 +813,20 @@ p {
   height: 3px;
   width: 25%;
   background-color: #217bf4;
+  border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
   .underline {
     width: 13%;
     left: 44%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .underline {
+    bottom: -15px;
+    left: 47%;
+    width: 140px;
+    height: 5px;
   }
 }
 

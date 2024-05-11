@@ -15,12 +15,16 @@
     &__text {
       text-align: center;
       font-size: 16px;
+      font-weight: 500;
+      @media screen and (min-width: 992px) {
+        font-size: 18px;
+      }
     }
     &__icon {
       color: $orange-color;
 
       &__background {
-        background-color: #f0f0f0;
+        background-color: #f5f5f5;
         width: 100px;
         height: 100px;
         margin-bottom: 40px;
@@ -36,6 +40,7 @@
     color: $orange-color;
     position: absolute;
     top: 50%;
+    cursor: pointer;
     &--prev {
       left: 10%;
       @media screen and (min-width: 768px) {
