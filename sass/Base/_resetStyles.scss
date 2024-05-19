@@ -45,20 +45,42 @@ h6 {
   font-weight: normal;
 }
 
-::placeholder {
+// .home ::placeholder {
+//   color: #ffffff;
+//   opacity: 1; /* Firefox */
+//   font-size: 16px;
+// }
+// :-ms-input-placeholder {
+//   /* Internet Explorer 10-11 */
+//   color: #ffffff;
+// }
+
+// ::-ms-input-placeholder {
+//   /* Microsoft Edge */
+//   color: #ffffff;
+// }
+
+/* Pour tous les navigateurs supportant ::placeholder */
+.home ::placeholder {
   color: #ffffff;
-  opacity: 1; /* Firefox */
+  opacity: 1;
   font-size: 16px;
 }
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
+
+/* Spécifique pour Internet Explorer 10+ */
+.home :-ms-input-placeholder {
   color: #ffffff;
+  opacity: 1;
+  font-size: 16px;
 }
 
-::-ms-input-placeholder {
-  /* Microsoft Edge */
+/* Spécifique pour Microsoft Edge */
+.home ::-ms-input-placeholder {
   color: #ffffff;
+  opacity: 1;
+  font-size: 16px;
 }
+
 .bold__item {
   font-weight: bold;
 }
