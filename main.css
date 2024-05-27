@@ -690,6 +690,9 @@ p {
 .footer__img__container {
   padding-left: 20px;
 }
+.footer__img__container a {
+  padding-bottom: 20px;
+}
 @media screen and (min-width: 768px) {
   .footer__img__container {
     padding-left: 30px;
@@ -1023,7 +1026,7 @@ p {
 }
 @media screen and (min-width: 992px) {
   .contact__banner {
-    height: 40vh;
+    height: 32vh;
   }
 }
 .contact__banner__container {
@@ -1034,24 +1037,50 @@ p {
   text-shadow: 1px 0px 1px #217bf4;
   color: #ffffff;
   font-size: 18px;
-  top: 80px;
+  top: 52px;
   left: 13%;
   font-weight: 500;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .contact__banner__h1 {
     font-size: 24px;
-    top: 30%;
-    left: 30%;
+    top: 90px;
+    left: 25%;
   }
 }
 @media screen and (min-width: 992px) {
   .contact__banner__h1 {
     font-size: 30px;
-    top: 30%;
-    left: 30%;
+    top: 37%;
+    left: 26%;
     width: 550px;
     text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__banner__h1 {
+    left: 30%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .contact__banner__h1 {
+    left: 33%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .contact__banner__h1 {
+    left: 34%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .contact__banner__h1 {
+    left: 36%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .contact__banner__h1 {
+    left: 38%;
   }
 }
 
@@ -1136,4 +1165,101 @@ p {
 .gender-label:hover {
   background-color: #eeeeee;
   color: #217bf4;
+}
+
+.desired__time__input {
+  margin-bottom: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.desired__time__inputs__container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .desired__time__label {
+    width: 400px !important;
+  }
+}
+.desired__time__label--no-show {
+  width: 50px !important;
+}
+.desired__time__container {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .desired__time__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+#consentement {
+  cursor: pointer;
+}
+
+.calo__h1 {
+  top: 65px;
+}
+
+.content__img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.section {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2 {
+  color: #217bf4;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.explications {
+  margin-bottom: 30px;
+}
+.explications__main {
+  padding: 0 20px;
+}
+.explications__p {
+  margin-top: 20px;
+  line-height: 1.3;
+}
+
+.benefits {
+  margin-bottom: 10px;
+}
+.benefits__list {
+  margin-top: 20px;
+}
+.benefits__list__item {
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.savings {
+  margin-bottom: 10px;
+}
+.savings__p {
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.why {
+  margin-bottom: 100px;
+}
+.why__p {
+  margin-bottom: 20px;
+  line-height: 1.3;
 }/*# sourceMappingURL=main.css.map */

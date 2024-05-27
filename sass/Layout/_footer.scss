@@ -78,6 +78,9 @@
     margin-top: 20px;
     &__container {
       padding-left: 20px;
+      a {
+        padding-bottom: 20px;
+      }
       @media screen and (min-width: 768px) {
         padding-left: 30px;
       }

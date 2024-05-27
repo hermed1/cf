@@ -259,6 +259,8 @@ function handleCollapse() {
   });
 }
 
+handleCollapse();
+
 document.addEventListener('DOMContentLoaded', function () {
   const menuItems = document.querySelectorAll('.menu__item');
   const currentPath = window.location.pathname;

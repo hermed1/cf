@@ -34,7 +34,11 @@
 
           <ul class="menu__box">
             <li><a class="menu__item" href="/index.html">ACCUEIL</a></li>
-            <li><a class="menu__item" href="#">LE CALORIFUGEAGE</a></li>
+            <li>
+              <a class="menu__item" href="/le calorifugeage.html"
+                >LE CALORIFUGEAGE</a
+              >
+            </li>
             <li><a class="menu__item" href="#">BLOG</a></li>
             <li>
               <a class="menu__item menu__item--contact" href="contact.html"
@@ -118,8 +122,8 @@
             placeholder="E-mail *"
           />
         </label>
-        <label for="horaire-début"
-          >Préférence horaire (facultatif) :
+        <!-- <div class="desired__time__container">
+          <label for="horaire-début">Préférence horaire (facultatif) : </label>
           <input
             type="time"
             id="horaire-début"
@@ -128,16 +132,44 @@
             value="09:00"
             step="300"
           />
-        </label>
-        <label for="horaire-fin">
-          <input
-            type="time"
-            id="horaire-fin"
-            nom="horaire-fin"
-            value="18:30"
-            class="form__input"
-          />
-        </label>
+
+          <label for="horaire-fin">
+            <input
+              type="time"
+              id="horaire-fin"
+              nom="horaire-fin"
+              value="18:30"
+              class="form__input"
+            />
+          </label>
+        </div> -->
+        <div class="desired__time__container">
+          <label for="horaire-début" class="desired__time__label"
+            >Préférence horaire (facultatif) :</label
+          >
+          <div class="desired__time__inputs__container">
+            <input
+              type="time"
+              id="horaire-début"
+              name="horaire-début"
+              class="form__input desired__time__input"
+              value="09:00"
+              step="300"
+            />
+            <label
+              for="horaire-fin"
+              class="desired__time__label--no-show"
+            ></label>
+            <input
+              type="time"
+              id="horaire-fin"
+              name="horaire-fin"
+              value="18:30"
+              class="form__input desired__time__input"
+            />
+          </div>
+        </div>
+
         <label for="message">
           <textarea
             name="message"

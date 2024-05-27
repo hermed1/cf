@@ -13,7 +13,7 @@
     width: 100%;
     filter: brightness(70%);
     @media screen and (min-width: 992px) {
-      height: 40vh;
+      height: 32vh;
     }
     &__container {
       position: relative;
@@ -23,20 +23,36 @@
       text-shadow: 1px 0px 1px #217bf4;
       color: #ffffff;
       font-size: 18px;
-      top: 80px;
+      top: 52px;
       left: 13%;
       font-weight: 500;
+      text-align: center;
       @media screen and (min-width: 768px) {
         font-size: 24px;
-        top: 30%;
-        left: 30%;
+        top: 90px;
+        left: 25%;
       }
       @media screen and (min-width: 992px) {
         font-size: 30px;
-        top: 30%;
-        left: 30%;
+        top: 37%;
+        left: 26%;
         width: 550px;
         text-align: center;
+      }
+      @media screen and (min-width: 1200px) {
+        left: 30%;
+      }
+      @media screen and (min-width: 1400px) {
+        left: 33%;
+      }
+      @media screen and (min-width: 1600px) {
+        left: 34%;
+      }
+      @media screen and (min-width: 1800px) {
+        left: 36%;
+      }
+      @media screen and (min-width: 2000px) {
+        left: 38%;
       }
     }
   }
@@ -120,4 +136,37 @@
 .gender-label:hover {
   background-color: #eeeeee;
   color: $blue-color;
+}
+
+.desired__time {
+  &__input {
+    margin-bottom: 0;
+    width: 100%;
+    cursor: pointer;
+  }
+  &__inputs__container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__label {
+    @media screen and (min-width: 992px) {
+      width: 400px !important;
+    }
+    &--no-show {
+      width: 50px !important;
+    }
+  }
+  &__container {
+    width: 100%;
+    @media screen and (min-width: 992px) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+}
+#consentement {
+  cursor: pointer;
 }
