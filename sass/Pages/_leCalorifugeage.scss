@@ -1,11 +1,18 @@
 .calo__h1 {
   top: 65px;
+  @media screen and (min-width: 768px) {
+    top: 41%;
+    font-size: 30px;
+  }
 }
 .content__img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   border-radius: 5px;
+  @media screen and (min-width: 992px) {
+    height: 250px;
+  }
 }
 .contact__banner {
   &__h1 {
@@ -16,16 +23,55 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
 }
 .h2 {
   color: $blue-color;
   font-size: 18px;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
 }
+.leCalo__main {
+  padding: 0 20px;
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 992px) {
+    padding: 0 15%;
+  }
+}
+
+.title__and__image__container {
+  width: 100%;
+  @media screen and (min-width: 992px) {
+    // border: pink solid;
+    width: 30%;
+  }
+}
+.text__container {
+  @media screen and (min-width: 992px) {
+    // border: yellow solid;
+    width: 60%;
+  }
+}
+
 .explications {
   margin-bottom: 30px;
-  &__main {
-    padding: 0 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   &__p {
@@ -36,6 +82,15 @@
 
 .benefits {
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
   &__list {
     margin-top: 20px;
     &__item {
@@ -47,15 +102,48 @@
 
 .savings {
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+  }
   &__p {
     margin-bottom: 20px;
     line-height: 1.3;
   }
 }
 .why {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
   &__p {
     margin-bottom: 20px;
     line-height: 1.3;
+    width: 100%;
+  }
+}
+
+.cta {
+  &__leCalo {
+    align-self: center;
+    @media screen and (min-width: 992px) {
+    }
+  }
+  &__leCalo__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      width: 80%;
+    }
   }
 }
