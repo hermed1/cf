@@ -1009,6 +1009,16 @@ p {
   }
 }
 
+.privacy__policy__p--homepage {
+  font-size: 11px;
+  width: 90%;
+  color: #ffffff;
+}
+
+.privacy__policy__link--homepage {
+  color: rgb(205, 240, 240);
+}
+
 .nav {
   padding-left: 20px;
 }
@@ -1199,6 +1209,20 @@ p {
 
 #consentement {
   cursor: pointer;
+}
+
+.privacy__policy__link {
+  color: #217bf4;
+}
+
+.privacy__policy__p {
+  align-self: self-start;
+  font-size: 12px;
+}
+@media screen and (min-width: 992px) {
+  .privacy__policy__p {
+    font-size: 14px;
+  }
 }
 
 .calo__h1 {

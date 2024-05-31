@@ -171,3 +171,13 @@
 #consentement {
   cursor: pointer;
 }
+.privacy__policy__link {
+  color: $blue-color;
+}
+.privacy__policy__p {
+  align-self: self-start;
+  font-size: 12px;
+  @media screen and (min-width: 992px) {
+    font-size: 14px;
+  }
+}

@@ -63,7 +63,7 @@
       </section>
     </header>
     <main class="contact__main">
-      <form action="" class="form">
+      <form id="contact-form" method="post" class="form">
         <label for="raison_sociale">
           <input
             id="raison_sociale"
@@ -86,8 +86,9 @@
             type="radio"
             id="monsieur"
             name="gender"
-            value="monsieur"
+            value="Monsieur"
             class="gender-input"
+            checked
             hidden
           />
           <label for="monsieur" class="gender-label">Monsieur</label>
@@ -96,7 +97,7 @@
             type="radio"
             id="madame"
             name="gender"
-            value="madame"
+            value="Madame"
             class="gender-input"
             hidden
           />
@@ -122,27 +123,7 @@
             placeholder="E-mail *"
           />
         </label>
-        <!-- <div class="desired__time__container">
-          <label for="horaire-début">Préférence horaire (facultatif) : </label>
-          <input
-            type="time"
-            id="horaire-début"
-            name="horaire-début"
-            class="form__input"
-            value="09:00"
-            step="300"
-          />
 
-          <label for="horaire-fin">
-            <input
-              type="time"
-              id="horaire-fin"
-              nom="horaire-fin"
-              value="18:30"
-              class="form__input"
-            />
-          </label>
-        </div> -->
         <div class="desired__time__container">
           <label for="horaire-début" class="desired__time__label"
             >Préférence horaire (facultatif) :</label
@@ -180,7 +161,7 @@
             class="form__input form__textarea"
           ></textarea>
         </label>
-        <div class="consent__container">
+        <!-- <div class="consent__container">
           <input
             type="checkbox"
             id="consentement"
@@ -192,7 +173,13 @@
             J'accepte que Calorifugeage-France.com stocke mes informations afin
             de pouvoir répondre à ma demande</label
           >
-        </div>
+        </div> -->
+        <p class="privacy__policy__p">
+          En soumettant ce formulaire, vous acceptez notre
+          <a href="/calorifugeage-france/" class="privacy__policy__link"
+            >politique de confidentialité.</a
+          >
+        </p>
         <label for="submit" class="submit__label__container">
           <input
             id="submit"
@@ -255,5 +242,6 @@
         </div>
       </div>
     </footer>
+    <script src="contact.js"></script>
   </body>
 </html>
