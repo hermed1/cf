@@ -22,7 +22,7 @@
       <nav class="nav" role="navigation">
         <a href="index.html" class="menu__logo">
           <img
-            src="./Images/logos/logo.png"
+            src="./Images/logos/logo_rs.png"
             alt="Calorifugeage France"
             class="menu__logo--img"
           />
@@ -55,11 +55,50 @@
           Prise en charge à 100% !
         </h1>
         <div class="banner__container">
-          <img
+          <!-- <img
             src="./Images/banners/banner.png"
+            srcset=""
             alt="Travaux de calorifugeage"
             class="banner"
-          />
+          /> -->
+          <!-- <img
+            src="./Images/banners/bannercp768.webp"
+            class="banner"
+            alt="Travaux de calorifugeage"
+            srcset="
+              ./Images/banners/bannercp768.webp   768w,
+              ./Images/banners/bannercp992.webp   992w,
+              ./Images/banners/bannercp1500.webp 1500w,
+              ./Images/banners/bannercp.webp     1992w
+            "
+            sizes="(max-width: 768px) 768px,
+           (max-width: 992px) 992px,
+           (max-width: 1500px) 1500px,
+           100vw"
+          /> -->
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./Images/banners/bannercp768.webp"
+            />
+            <source
+              media="(max-width: 992px)"
+              srcset="./Images/banners/bannercp992.webp"
+            />
+            <source
+              media="(max-width: 1500px)"
+              srcset="./Images/banners/bannercp1500.webp"
+            />
+            <source
+              media="(min-width: 1501px)"
+              srcset="./Images/banners/bannercp.webp"
+            />
+            <img
+              src="./Images/banners/bannercp.webp"
+              alt="Travaux de calorifugeage"
+              class="banner"
+            />
+          </picture>
         </div>
         <aside class="form__container">
           <form id="homepage-form" class="banner__form" method="post">
@@ -143,10 +182,23 @@
             </button>
           </div>
           <div class="comprendre__image__container">
-            <img
+            <!-- <img
               class="comprendre__image"
               src="./Images/banners/toit.png"
               alt="Travaux de calorifugeage"
+            /> -->
+            <img
+              src="./Images/banners/toitcp.png"
+              alt="Travaux de calorifugeage"
+              class="comprendre__image"
+              srcset="
+                ./Images/banners/toitcp768.png  768w,
+                ./Images/banners/toitcp992.png  992w,
+                ./Images/banners/toitcp.png    1200w
+              "
+              sizes="(max-width: 768px) 768px,
+                   (max-width: 992px) 992px,
+                   100vw"
             />
           </div>
         </div>
@@ -340,11 +392,26 @@
       </div>
     </main>
     <section class="cta-section">
-      <img
-        class="cta-section__banner"
-        src="./Images/banners/pipes6.jpg"
-        alt=""
-      />
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="./Images/banners/pipes6cp768px.webp"
+        />
+        <source
+          media="(max-width: 992px)"
+          srcset="./Images/banners/pipes6cp_1_992px.webp"
+        />
+        <source
+          media="(max-width: 1500px)"
+          srcset="./Images/banners/pipes6cp_2_1500px.webp"
+        />
+        <img
+          src="./Images/banners/pipes6cp.webp"
+          alt="Tuyaux calorifugeage"
+          class="cta-section__banner"
+        />
+      </picture>
+
       <div class="cta-section__container">
         <h2 class="cta-section__container__title">
           Contactez-nous pour obtenir le financement total de vos travaux de
@@ -365,24 +432,24 @@
         <div class="footer__logos">
           <div class="footer__logosx2">
             <img
-              src="./Images/logos/cofrac-vector-logo.svg"
+              src="./Images/logos/cofrac-vector-logocprs.svg"
               alt="Logo COFRAC"
               class="footer__logo"
             />
             <img
-              src="./Images/logos/CEE-main.svg"
+              src="./Images/logos/CEE-maincp.svg"
               alt="Logo CEE"
               class="footer__logo footer__logo--large"
             />
           </div>
           <div class="footer__logosx2">
             <img
-              src="./Images/logos/logo_qualibat-rge-hd.svg"
+              src="./Images/logos/logo_qualibat-rge-hdcprs.svg"
               alt="Logo RGE Qualibat"
               class="footer__logo"
             />
             <img
-              src="./Images/logos/Isover_logo.svg"
+              src="./Images/logos/Isover_logocprs.svg"
               alt="Logo ISOVER Saint-Gobain"
               class="footer__logo footer__logo--large"
             />
@@ -400,7 +467,7 @@
         <div class="footer__img__container">
           <a href="/">
             <img
-              src="./Images/logos/logo.png"
+              src="./Images/logos/logo_rs.png"
               alt="calorifugeage-france.com"
               class="footer__img"
             />
