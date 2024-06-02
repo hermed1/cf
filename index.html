@@ -3,16 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="main.css" />
+    <meta
+      name="description"
+      content="Avec Calorifugeage-France, bénéficiez de solutions de calorifugeage gratuites. Isolez votre tuyauterie et économisez sur vos factures."
+    />
     <title>Calorifugeage France</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/Images/favicon_io/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/Images/favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/Images/favicon_io/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Images/favicon_io/favicon.ico"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/Images/favicon_io/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
     <script
       src="https://kit.fontawesome.com/03e4bd3b07.js"
       crossorigin="anonymous"
+      defer
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
@@ -57,27 +104,6 @@
           Prise en charge à 100% !
         </h1>
         <div class="banner__container">
-          <!-- <img
-            src="./Images/banners/banner.png"
-            srcset=""
-            alt="Travaux de calorifugeage"
-            class="banner"
-          /> -->
-          <!-- <img
-            src="./Images/banners/bannercp768.webp"
-            class="banner"
-            alt="Travaux de calorifugeage"
-            srcset="
-              ./Images/banners/bannercp768.webp   768w,
-              ./Images/banners/bannercp992.webp   992w,
-              ./Images/banners/bannercp1500.webp 1500w,
-              ./Images/banners/bannercp.webp     1992w
-            "
-            sizes="(max-width: 768px) 768px,
-           (max-width: 992px) 992px,
-           (max-width: 1500px) 1500px,
-           100vw"
-          /> -->
           <picture>
             <source
               media="(max-width: 768px)"
@@ -99,6 +125,7 @@
               src="./Images/banners/bannercp.webp"
               alt="Travaux de calorifugeage"
               class="banner"
+              loading="eager"
             />
           </picture>
         </div>
@@ -201,6 +228,7 @@
               sizes="(max-width: 768px) 768px,
                    (max-width: 992px) 992px,
                    100vw"
+              loading="lazy"
             />
           </div>
         </div>
@@ -411,6 +439,7 @@
           src="./Images/banners/pipes6cp.webp"
           alt="Tuyaux calorifugeage"
           class="cta-section__banner"
+          loading="lazy"
         />
       </picture>
 
@@ -437,11 +466,13 @@
               src="./Images/logos/cofrac-vector-logocprs.svg"
               alt="Logo COFRAC"
               class="footer__logo"
+              loading="lazy"
             />
             <img
               src="./Images/logos/CEE-maincp.svg"
               alt="Logo CEE"
               class="footer__logo footer__logo--large"
+              loading="lazy"
             />
           </div>
           <div class="footer__logosx2">
@@ -449,11 +480,13 @@
               src="./Images/logos/logo_qualibat-rge-hdcprs.svg"
               alt="Logo RGE Qualibat"
               class="footer__logo"
+              loading="lazy"
             />
             <img
               src="./Images/logos/Isover_logocprs.svg"
               alt="Logo ISOVER Saint-Gobain"
               class="footer__logo footer__logo--large"
+              loading="lazy"
             />
           </div>
         </div>
@@ -485,6 +518,6 @@
       <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
   </body>
 </html>

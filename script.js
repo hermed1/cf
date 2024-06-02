@@ -39,11 +39,13 @@ function handleCarousel() {
     changeSlide(-1);
   });
 
-  document
-    .querySelector('.carousel__slides')
-    .addEventListener('touchstart', (e) => {
+  document.querySelector('.carousel__slides').addEventListener(
+    'touchstart',
+    (e) => {
       touchStartX = e.changedTouches[0].screenX;
-    });
+    },
+    { passive: true }
+  );
 
   document
     .querySelector('.carousel__slides')
