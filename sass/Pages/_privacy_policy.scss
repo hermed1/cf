@@ -1,0 +1,17 @@
+.privacy {
+  &__main {
+    padding: 0 20px;
+    @media screen and (min-width: 992px) {
+      padding: 0 15%;
+    }
+  }
+  &__section {
+    margin-bottom: 30px;
+    @media screen and (min-width: 992px) {
+      margin-bottom: 50px;
+    }
+  }
+  &__h2 {
+    font-size: 20px;
+  }
+}

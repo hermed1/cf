@@ -1,8 +1,15 @@
 .calo__h1 {
-  top: 65px;
+  top: 40%;
+  left: 17%;
   @media screen and (min-width: 768px) {
     top: 41%;
     font-size: 30px;
+  }
+  @media screen and (min-width: 992px) {
+    top: 37%;
+    left: 35%;
+    width: 550px;
+    text-align: center;
   }
 }
 .content__img {
@@ -51,8 +58,7 @@
 .title__and__image__container {
   width: 100%;
   @media screen and (min-width: 992px) {
-    // border: pink solid;
-    width: 30%;
+    width: 35%;
   }
 }
 .text__container {

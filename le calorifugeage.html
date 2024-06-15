@@ -32,11 +32,10 @@
           />
         </a>
         <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
+          <input id="menu__toggle" type="checkbox" aria-label="Menu Toggle" />
           <label class="menu__btn" for="menu__toggle">
             <span></span>
           </label>
-
           <ul class="menu__box">
             <li><a class="menu__item" href="index.html">ACCUEIL</a></li>
             <li>
@@ -57,11 +56,32 @@
       </nav>
       <section class="contact__section">
         <div class="contact__banner__container">
-          <img
-            src="./Images/banners/banner.png"
-            alt="Travaux de calorifugeage"
-            class="contact__banner"
-          />
+          <div class="banner__container">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="./Images/banners/bannercp768.webp"
+              />
+              <source
+                media="(max-width: 992px)"
+                srcset="./Images/banners/bannercp992.webp"
+              />
+              <source
+                media="(max-width: 1500px)"
+                srcset="./Images/banners/bannercp1500.webp"
+              />
+              <source
+                media="(min-width: 1501px)"
+                srcset="./Images/banners/bannercp.webp"
+              />
+              <img
+                src="./Images/banners/bannercp.webp"
+                alt="Travaux de calorifugeage"
+                class="contact__banner"
+                loading="eager"
+              />
+            </picture>
+          </div>
           <h1 class="contact__banner__h1 calo__h1">
             Le calorifugeage : explications
           </h1>
@@ -74,11 +94,31 @@
           <h2 class="explications__h2 h2">
             Qu'est-ce que le calorifugeage ? Définition et explications
           </h2>
-          <img
-            src="./Images/content_images/pipes3.jpg"
+          <!-- <img
+            src="./Images/content_images/pipes3cp768.webp"
             alt="explications calorifugeage"
             class="content__img"
-          />
+          /> -->
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./Images/content_images/pipes3cp768.webp"
+            />
+            <source
+              media="(max-width: 992px)"
+              srcset="./Images/content_images//pipes3cp992.webp"
+            />
+            <source
+              media="(min-width: 993px)"
+              srcset="./Images/content_images//pipes3cp992+.webp"
+            />
+            <img
+              src="./Images/content_images/pipes3cp992+.webp"
+              alt="explications calorifugeage"
+              class="content__img"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div class="text__container">
           <p class="explications__p">
@@ -110,11 +150,31 @@
       <section class="section benefits">
         <div class="title__and__image__container">
           <h2 class="benefits__h2 h2">Les avantages du calorifugeage</h2>
-          <img
-            src="./Images/content_images/copper-pipes.jpg"
+          <!-- <img
+            src="./Images/content_images/copper-pipescp.webp"
             alt="Isolation thermique de tuyaux"
             class="content__img"
-          />
+          /> -->
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./Images/content_images/copper-pipescp768.webp"
+            />
+            <source
+              media="(max-width: 992px)"
+              srcset="./Images/content_images/copper-pipescp992.webp"
+            />
+            <source
+              media="(min-width: 993px)"
+              srcset="./Images/content_images/copper-pipescp992+.webp"
+            />
+            <img
+              src="./Images/content_images/copper-pipescp992+.webp"
+              alt="Isolation thermique tuyauterie"
+              class="content__img"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div class="text__container">
           <ul class="benefits__list">
@@ -185,11 +245,31 @@
           <h2 class="savings__h2 h2">
             Économies potentielles grâce au calorifugeage
           </h2>
-          <img
-            src="./Images/content_images/save.jpg"
+          <!-- <img
+            src="./Images/content_images/savecp.jpg"
             alt="Exemple d'économie d'énergie grâce au calorifugeage"
             class="content__img"
-          />
+          /> -->
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./Images/content_images/savecp768.webp"
+            />
+            <source
+              media="(max-width: 992px)"
+              srcset="./Images/content_images/savecp992.webp"
+            />
+            <source
+              media="(min-width: 993px)"
+              srcset="./Images/content_images/savecp992+.webp"
+            />
+            <img
+              src="./Images/content_images/savecp992+.webp"
+              alt="Description de l'image de sauvegarde"
+              class="content__img"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div class="text__container">
           <p class="savings__p">
@@ -235,11 +315,26 @@
           <h2 class="why__h2 h2">
             Pourquoi le calorifugeage est crucial en 2024 ?
           </h2>
-          <img
-            src="./Images/content_images/why.jpg"
-            alt="Importance du calorifugeage en 2024"
-            class="content__img"
-          />
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./Images/content_images/why768.webp"
+            />
+            <source
+              media="(max-width: 992px)"
+              srcset="./Images/content_images/why992.webp"
+            />
+            <source
+              media="(min-width: 993px)"
+              srcset="./Images/content_images/why992+.webp"
+            />
+            <img
+              src="./Images/content_images/why992+.webp"
+              alt="Description de l'image why"
+              class="content__img"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div class="text__container">
           <p class="why__p">
@@ -296,37 +391,45 @@
         >
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer__container">
         <div class="footer__logos">
           <div class="footer__logosx2">
             <img
-              src="./Images/logos/cofrac-vector-logo.svg"
+              src="./Images/logos/cofrac-vector-logocprs.svg"
               alt="Logo COFRAC"
               class="footer__logo"
+              loading="lazy"
             />
             <img
-              src="./Images/logos/CEE-main.svg"
+              src="./Images/logos/CEE-maincp.svg"
               alt="Logo CEE"
               class="footer__logo footer__logo--large"
+              loading="lazy"
             />
           </div>
           <div class="footer__logosx2">
             <img
-              src="./Images/logos/logo_qualibat-rge-hd.svg"
+              src="./Images/logos/logo_qualibat-rge-hdcprs.svg"
               alt="Logo RGE Qualibat"
               class="footer__logo"
+              loading="lazy"
             />
             <img
-              src="./Images/logos/Isover_logo.svg"
+              src="./Images/logos/Isover_logocprs.svg"
               alt="Logo ISOVER Saint-Gobain"
               class="footer__logo footer__logo--large"
+              loading="lazy"
             />
           </div>
         </div>
         <div class="footer__bottom__container">
-          <a href="" class="footer__link">Mentions légales</a>
-          <a href="" class="footer__link">Politique de confidentialité</a>
+          <a href="./mentions_legales.html" class="footer__link"
+            >Mentions légales</a
+          >
+          <a href="./privacy_policy.html" class="footer__link"
+            >Politique de confidentialité</a
+          >
           <a
             href="mailto:contact@calorifugeage-france.com;"
             class="footer__link"
@@ -336,7 +439,7 @@
         <div class="footer__img__container">
           <a href="/">
             <img
-              src="./Images/logos/logo.png"
+              src="./Images/logos/logo_rs.png"
               alt="calorifugeage-france.com"
               class="footer__img"
             />
@@ -348,5 +451,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>

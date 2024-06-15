@@ -1,8 +1,12 @@
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Contactez Calorifugeage France pour obtenir votre devis gratuit et personnalisé pour vos travaux de calorifugeage. Optimisez l'isolation de votre tuyauterie et réduisez vos factures d'énergie dès maintenant."
+    />
     <link rel="stylesheet" href="main.css" />
     <title>Contact</title>
     <script
@@ -28,7 +32,7 @@
           />
         </a>
         <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
+          <input id="menu__toggle" type="checkbox" aria-label="Menu Toggle" />
           <label class="menu__btn" for="menu__toggle">
             <span></span>
           </label>
@@ -53,11 +57,32 @@
       </nav>
       <section class="contact__section">
         <div class="contact__banner__container">
-          <img
-            src="./Images/banners/banner.png"
-            alt="Travaux de calorifugeage"
-            class="contact__banner"
-          />
+          <div class="banner__container">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="./Images/banners/bannercp768.webp"
+              />
+              <source
+                media="(max-width: 992px)"
+                srcset="./Images/banners/bannercp992.webp"
+              />
+              <source
+                media="(max-width: 1500px)"
+                srcset="./Images/banners/bannercp1500.webp"
+              />
+              <source
+                media="(min-width: 1501px)"
+                srcset="./Images/banners/bannercp.webp"
+              />
+              <img
+                src="./Images/banners/bannercp.webp"
+                alt="Travaux de calorifugeage"
+                class="contact__banner"
+                loading="eager"
+              />
+            </picture>
+          </div>
           <h1 class="contact__banner__h1">
             Contactez-nous pour obtenir votre <br />
             devis calorifugeage à 0€ !
@@ -139,17 +164,17 @@
               class="form__input desired__time__input"
               value="09:00"
               step="300"
+              aria-label="Heure de début"
             />
-            <label
-              for="horaire-fin"
-              class="desired__time__label--no-show"
-            ></label>
+            <label for="horaire-fin" class="desired__time__label--no-show">
+            </label>
             <input
               type="time"
               id="horaire-fin"
               name="horaire-fin"
               value="18:30"
               class="form__input desired__time__input"
+              aria-label="Heure de fin"
             />
           </div>
         </div>
@@ -179,7 +204,11 @@
         </div> -->
         <p class="privacy__policy__p">
           En soumettant ce formulaire, vous acceptez notre
-          <a href="/calorifugeage-france/" class="privacy__policy__link"
+          <a
+            href="./privacy_policy.html"
+            class="privacy__policy__link"
+            aria-label="Politique de confidentialité"
+            role="link"
             >politique de confidentialité.</a
           >
         </p>
@@ -198,42 +227,57 @@
         <div class="footer__logos">
           <div class="footer__logosx2">
             <img
-              src="./Images/logos/cofrac-vector-logo.svg"
+              src="./Images/logos/cofrac-vector-logocprs.svg"
               alt="Logo COFRAC"
               class="footer__logo"
+              loading="lazy"
             />
             <img
-              src="./Images/logos/CEE-main.svg"
+              src="./Images/logos/CEE-maincp.svg"
               alt="Logo CEE"
               class="footer__logo footer__logo--large"
+              loading="lazy"
             />
           </div>
           <div class="footer__logosx2">
             <img
-              src="./Images/logos/logo_qualibat-rge-hd.svg"
+              src="./Images/logos/logo_qualibat-rge-hdcprs.svg"
               alt="Logo RGE Qualibat"
               class="footer__logo"
+              loading="lazy"
             />
             <img
-              src="./Images/logos/Isover_logo.svg"
+              src="./Images/logos/Isover_logocprs.svg"
               alt="Logo ISOVER Saint-Gobain"
               class="footer__logo footer__logo--large"
+              loading="lazy"
             />
           </div>
         </div>
         <div class="footer__bottom__container">
-          <a href="" class="footer__link">Mentions légales</a>
-          <a href="" class="footer__link">Politique de confidentialité</a>
+          <a
+            href="./mentions_legales.html"
+            class="footer__link"
+            aria-label="Mentions légales"
+            >Mentions légales</a
+          >
+          <a
+            href="./privacy_policy.html"
+            class="footer__link"
+            aria-label="Politique de confidentialité"
+            >Politique de confidentialité</a
+          >
           <a
             href="mailto:contact@calorifugeage-france.com;"
             class="footer__link"
+            aria-label="Email contact@calorifugeage-france.com"
             >contact@calorifugeage-france.com</a
           >
         </div>
         <div class="footer__img__container">
           <a href="/">
             <img
-              src="./Images/logos/logo.png"
+              src="./Images/logos/logo_rs.png"
               alt="calorifugeage-france.com"
               class="footer__img"
             />
@@ -245,6 +289,6 @@
         </div>
       </div>
     </footer>
-    <script src="contact.js"></script>
+    <script src="contact.js" defer></script>
   </body>
 </html>

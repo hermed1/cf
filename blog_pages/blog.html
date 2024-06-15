@@ -3,24 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Découvrez les dernières actualités et conseils sur le calorifugeage avec le blog de Calorifugeage France. Restez informé sur les meilleures pratiques d'isolation thermique pour optimiser votre efficacité énergétique."
+    />
+    <title>Blog - Calorifugeage France</title>
     <link rel="stylesheet" href="../main.css" />
-    <title>Calorifugeage France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/Images/favicon_io/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/Images/favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/Images/favicon_io/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Images/favicon_io/favicon.ico"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/Images/favicon_io/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
     <script
       src="https://kit.fontawesome.com/03e4bd3b07.js"
       crossorigin="anonymous"
+      defer
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      />
+    </noscript>
   </head>
+
   <body class="home">
     <header class="header">
       <nav class="nav" role="navigation">
-        <a href="index.html" class="menu__logo">
+        <a href="../index.html" class="menu__logo">
           <img
             src="../Images/logos/logo_rs.png"
             alt="Calorifugeage France"
@@ -28,7 +83,7 @@
           />
         </a>
         <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
+          <input id="menu__toggle" type="checkbox" aria-label="Menu Toggle" />
           <label class="menu__btn" for="menu__toggle">
             <span></span>
           </label>
@@ -50,6 +105,13 @@
         </div>
       </nav>
     </header>
+    <main class="blog__main">
+      <h1 class="blog__h1">
+        Découvrez prochainement ici toutes les actualités du calorifugeage, de
+        l'isolation thermique, et plus globalement encore, toutes les actualités
+        liées au secteur de l'énergie.
+      </h1>
+    </main>
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__logos">
@@ -79,8 +141,12 @@
           </div>
         </div>
         <div class="footer__bottom__container">
-          <a href="" class="footer__link">Mentions légales</a>
-          <a href="" class="footer__link">Politique de confidentialité</a>
+          <a href="../mentions_legales.html" class="footer__link"
+            >Mentions légales</a
+          >
+          <a href="../privacy_policy.html" class="footer__link"
+            >Politique de confidentialité</a
+          >
           <a
             href="mailto:contact@calorifugeage-france.com;"
             class="footer__link"
@@ -88,7 +154,7 @@
           >
         </div>
         <div class="footer__img__container">
-          <a href="/">
+          <a href="../index.html">
             <img
               src="../Images/logos/logo_rs.png"
               alt="calorifugeage-france.com"
@@ -106,6 +172,6 @@
       <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <script src="script.js"></script>
+    <!-- <script src="../script.js" defer></script> -->
   </body>
 </html>
