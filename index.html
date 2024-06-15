@@ -7,7 +7,7 @@
       name="description"
       content="Avec Calorifugeage-France, bénéficiez de solutions de calorifugeage gratuites. Isolez votre tuyauterie et économisez sur vos factures."
     />
-    <title>Calorifugeage France</title>
+    <title>Calorifugeage France - Isolation Thermique Efficace</title>
     <link rel="stylesheet" href="main.css" />
     <link
       rel="apple-touch-icon"
@@ -73,8 +73,12 @@
   </head>
   <body class="home">
     <header class="header">
-      <nav class="nav" role="navigation">
-        <a href="index.html" class="menu__logo">
+      <nav class="nav" role="navigation" aria-label="Navigation principale">
+        <a
+          href="index.html"
+          class="menu__logo"
+          aria-label="Calorifugeage France - Accueil"
+        >
           <img
             src="./Images/logos/logo_rs.png"
             alt="Calorifugeage France"
@@ -82,7 +86,11 @@
           />
         </a>
         <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" aria-label="Menu Toggle" />
+          <input
+            id="menu__toggle"
+            type="checkbox"
+            aria-label="Ouvrir le menu"
+          />
           <label class="menu__btn" for="menu__toggle">
             <span></span>
           </label>
@@ -145,6 +153,7 @@
                 type="text"
                 placeholder="Raison sociale"
                 class="banner__form__input"
+                aria-required="true"
               />
             </label>
             <label for="nom">
@@ -153,22 +162,25 @@
                 class="banner__form__input"
                 type="text"
                 placeholder="Nom"
+                aria-required="true"
               />
             </label>
             <label for="telephone">
               <input
                 id="telephone"
                 class="banner__form__input"
-                type="phone"
+                type="tel"
                 placeholder="Téléphone"
+                aria-required="true"
               />
             </label>
-            <label for="email"
-              ><input
+            <label for="email">
+              <input
                 id="email"
                 class="banner__form__input"
                 type="email"
                 placeholder="E-mail"
+                aria-required="true"
               />
             </label>
             <p class="privacy__policy__p--homepage">
@@ -176,6 +188,7 @@
               <a
                 href="./privacy_policy.html"
                 class="privacy__policy__link--homepage"
+                aria-label="Politique de confidentialité"
                 >politique de confidentialité.</a
               >
             </p>
@@ -184,7 +197,7 @@
                 id="submit"
                 class="banner__form__input banner__form__input--submit cta"
                 type="submit"
-                placeholder="Envoyer"
+                value="Envoyer"
               />
             </label>
           </form>
@@ -269,13 +282,17 @@
         <div class="carousel">
           <button
             class="carousel__control carousel__control--prev"
-            aria-label="Previous slide"
+            aria-label="Slide précédent"
           >
             <i
               class="fa-solid fa-2xl fa-chevron-left carousel__control__icon"
             ></i>
           </button>
-          <div class="carousel__slides">
+          <div
+            class="carousel__slides"
+            role="region"
+            aria-label="Diapositives du carousel"
+          >
             <div class="carousel__slide">
               <div class="carousel__slide__icon__background">
                 <i class="fa-solid fa-2x fa-building carousel__slide__icon"></i>
@@ -325,31 +342,13 @@
           </div>
           <button
             class="carousel__control carousel__control--next"
-            aria-label="Next slide"
+            aria-label="Slide suivant"
           >
             <i
               class="fa-solid fa-2xl fa-chevron-right carousel__control__icon"
             ></i>
           </button>
         </div>
-
-        <!-- <div class="carousel__indicators">
-            <button
-              class="carousel__indicator"
-              data-slide-to="0"
-              aria-label="Go to slide 1"
-            ></button>
-            <button
-              class="carousel__indicator"
-              data-slide-to="1"
-              aria-label="Go to slide 2"
-            ></button>
-            <button
-              class="carousel__indicator"
-              data-slide-to="2"
-              aria-label="Go to slide 3"
-            ></button>
-          </div> -->
       </section>
       <div class="collapse">
         <div class="collapse__item">
@@ -502,6 +501,7 @@
           <a
             href="mailto:contact@calorifugeage-france.com;"
             class="footer__link"
+            aria-label="Envoyer un email à contact@calorifugeage-france.com"
             >contact@calorifugeage-france.com</a
           >
         </div>

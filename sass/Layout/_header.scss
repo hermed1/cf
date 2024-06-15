@@ -1,7 +1,7 @@
 .header {
   padding: 20px 0px 0px 20px;
   @media screen and (min-width: 992px) {
-    padding: 20px 0;
+    padding: 20px 0 0 0;
   }
 }
 .menu {
@@ -17,7 +17,7 @@
       height: 45px;
       object-fit: contain;
       @media screen and (min-width: 992px) {
-        max-width: unset; 
+        max-width: unset;
         width: 350px;
       }
     }
