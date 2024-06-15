@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta
-      name="ahrefs-site-verification"
-      content="25313b99f78b1ef8f6e31b4704a1711664b06447de9c868676cce87e09958def"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -151,42 +147,46 @@
         <aside class="form__container">
           <form id="homepage-form" class="banner__form" method="post">
             <h2 class="banner__form__title">Obtenir mon devis à 0 €</h2>
-            <label for="raison_sociale">
+            <div class="form-group">
               <input
                 id="raison_sociale"
                 type="text"
                 placeholder="Raison sociale"
                 class="banner__form__input"
+                aria-label="Raison sociale"
                 aria-required="true"
               />
-            </label>
-            <label for="nom">
+            </div>
+            <div class="form-group">
               <input
                 id="nom"
                 class="banner__form__input"
                 type="text"
                 placeholder="Nom"
+                aria-label="Nom"
                 aria-required="true"
               />
-            </label>
-            <label for="telephone">
+            </div>
+            <div class="form-group">
               <input
                 id="telephone"
                 class="banner__form__input"
                 type="tel"
                 placeholder="Téléphone"
+                aria-label="Téléphone"
                 aria-required="true"
               />
-            </label>
-            <label for="email">
+            </div>
+            <div class="form-group">
               <input
                 id="email"
                 class="banner__form__input"
                 type="email"
                 placeholder="E-mail"
+                aria-label="E-mail"
                 aria-required="true"
               />
-            </label>
+            </div>
             <p class="privacy__policy__p--homepage">
               En soumettant ce formulaire, vous acceptez notre
               <a
@@ -196,14 +196,15 @@
                 >politique de confidentialité.</a
               >
             </p>
-            <label for="submit">
+            <div class="form-group">
               <input
                 id="submit"
                 class="banner__form__input banner__form__input--submit cta"
                 type="submit"
                 value="Envoyer"
+                aria-label="Envoyer"
               />
-            </label>
+            </div>
           </form>
         </aside>
       </section>
