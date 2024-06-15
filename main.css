@@ -116,6 +116,12 @@ p {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (min-width: 992px) {
+  .menu__logo--img {
+    max-width: unset;
+    width: 350px;
+  }
+}
 
 #menu__toggle {
   opacity: 0;
@@ -230,6 +236,8 @@ p {
   .nav {
     justify-content: space-around;
     padding: 0 0 20px 0;
+    margin-bottom: 0;
+    align-items: center;
   }
 }
 
@@ -244,6 +252,7 @@ p {
     display: flex;
     justify-content: center;
     width: 42%;
+    height: auto;
   }
 }
 
