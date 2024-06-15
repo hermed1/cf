@@ -8,7 +8,7 @@
       content="Contactez Calorifugeage France pour obtenir votre devis gratuit et personnalisé pour vos travaux de calorifugeage. Optimisez l'isolation de votre tuyauterie et réduisez vos factures d'énergie dès maintenant."
     />
     <link rel="stylesheet" href="main.css" />
-    <title>Contact</title>
+    <title>Contact - Calorifugeage France</title>
     <script
       src="https://kit.fontawesome.com/03e4bd3b07.js"
       crossorigin="anonymous"
@@ -17,14 +17,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body class="contact">
     <header class="contact__header">
-      <nav class="nav" role="navigation">
-        <a href="index.html" class="menu__logo">
+      <nav class="nav" role="navigation" aria-label="Navigation principale">
+        <a
+          href="index.html"
+          class="menu__logo"
+          aria-label="Calorifugeage France - Accueil"
+        >
           <img
             src="./Images/logos/logo.png"
             alt="Calorifugeage France"
@@ -32,7 +36,11 @@
           />
         </a>
         <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" aria-label="Menu Toggle" />
+          <input
+            id="menu__toggle"
+            type="checkbox"
+            aria-label="Ouvrir le menu"
+          />
           <label class="menu__btn" for="menu__toggle">
             <span></span>
           </label>
@@ -92,22 +100,26 @@
     </header>
     <main class="contact__main">
       <form id="contact-form" method="post" class="form">
-        <label for="raison_sociale">
+        <div class="form-group">
+          <label for="raison_sociale" class="sr-only">Raison sociale</label>
           <input
             id="raison_sociale"
             type="text"
             placeholder="Raison sociale"
             class="form__input"
+            aria-label="Raison sociale"
           />
-        </label>
-        <label for="siret">
+        </div>
+        <div class="form-group">
+          <label for="siret" class="sr-only">SIRET</label>
           <input
             id="siret"
             type="text"
             placeholder="SIRET"
             class="form__input"
+            aria-label="SIRET"
           />
-        </label>
+        </div>
 
         <div class="gender-selection">
           <input
@@ -132,25 +144,39 @@
           <label for="madame" class="gender-label">Madame</label>
         </div>
 
-        <label for="nom">
-          <input id="nom" class="form__input" type="text" placeholder="Nom *" />
-        </label>
-        <label for="telephone">
+        <div class="form-group">
+          <label for="nom" class="sr-only">Nom</label>
+          <input
+            id="nom"
+            class="form__input"
+            type="text"
+            placeholder="Nom *"
+            aria-label="Nom"
+            aria-required="true"
+          />
+        </div>
+        <div class="form-group">
+          <label for="telephone" class="sr-only">Téléphone</label>
           <input
             id="telephone"
             class="form__input"
-            type="phone"
+            type="tel"
             placeholder="Téléphone *"
+            aria-label="Téléphone"
+            aria-required="true"
           />
-        </label>
-        <label for="email"
-          ><input
+        </div>
+        <div class="form-group">
+          <label for="email" class="sr-only">E-mail</label>
+          <input
             id="email"
             class="form__input"
             type="email"
             placeholder="E-mail *"
+            aria-label="E-mail"
+            aria-required="true"
           />
-        </label>
+        </div>
 
         <div class="desired__time__container">
           <label for="horaire-début" class="desired__time__label"
@@ -166,8 +192,6 @@
               step="300"
               aria-label="Heure de début"
             />
-            <label for="horaire-fin" class="desired__time__label--no-show">
-            </label>
             <input
               type="time"
               id="horaire-fin"
@@ -179,7 +203,8 @@
           </div>
         </div>
 
-        <label for="message">
+        <div class="form-group">
+          <label for="message" class="sr-only">Message</label>
           <textarea
             name="message"
             id="message"
@@ -187,21 +212,9 @@
             rows="3"
             placeholder="Facultatif : Indiquez, par exemple, la longueur de votre tuyauterie, si vous la connaissez."
             class="form__input form__textarea"
+            aria-label="Message"
           ></textarea>
-        </label>
-        <!-- <div class="consent__container">
-          <input
-            type="checkbox"
-            id="consentement"
-            name="consentement"
-            required
-            class="checkbox"
-          />
-          <label for="consent">
-            J'accepte que Calorifugeage-France.com stocke mes informations afin
-            de pouvoir répondre à ma demande</label
-          >
-        </div> -->
+        </div>
         <p class="privacy__policy__p">
           En soumettant ce formulaire, vous acceptez notre
           <a
@@ -212,14 +225,16 @@
             >politique de confidentialité.</a
           >
         </p>
-        <label for="submit" class="submit__label__container">
+        <div class="form-group">
+          <label for="submit" class="sr-only">Envoyer</label>
           <input
             id="submit"
             class="form__input form__input--submit cta"
             type="submit"
-            placeholder="Envoyer"
+            value="Envoyer"
+            aria-label="Envoyer"
           />
-        </label>
+        </div>
       </form>
     </main>
     <footer class="footer">

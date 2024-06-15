@@ -23,8 +23,12 @@
   </head>
   <body>
     <header class="contact__header">
-      <nav class="nav" role="navigation">
-        <a href="index.html" class="menu__logo">
+      <nav class="nav" role="navigation" aria-label="Navigation principale">
+        <a
+          href="index.html"
+          class="menu__logo"
+          aria-label="Calorifugeage France - Accueil"
+        >
           <img
             src="./Images/logos/logo.png"
             alt="Calorifugeage France"
@@ -32,14 +36,18 @@
           />
         </a>
         <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" aria-label="Menu Toggle" />
+          <input
+            id="menu__toggle"
+            type="checkbox"
+            aria-label="Ouvrir le menu"
+          />
           <label class="menu__btn" for="menu__toggle">
             <span></span>
           </label>
           <ul class="menu__box">
             <li><a class="menu__item" href="index.html">ACCUEIL</a></li>
             <li>
-              <a class="menu__item" href="leCalorifugeage.html"
+              <a class="menu__item" href="le calorifugeage.html"
                 >LE CALORIFUGEAGE</a
               >
             </li>
@@ -94,11 +102,6 @@
           <h2 class="explications__h2 h2">
             Qu'est-ce que le calorifugeage ? Définition et explications
           </h2>
-          <!-- <img
-            src="./Images/content_images/pipes3cp768.webp"
-            alt="explications calorifugeage"
-            class="content__img"
-          /> -->
           <picture>
             <source
               media="(max-width: 768px)"
@@ -150,11 +153,6 @@
       <section class="section benefits">
         <div class="title__and__image__container">
           <h2 class="benefits__h2 h2">Les avantages du calorifugeage</h2>
-          <!-- <img
-            src="./Images/content_images/copper-pipescp.webp"
-            alt="Isolation thermique de tuyaux"
-            class="content__img"
-          /> -->
           <picture>
             <source
               media="(max-width: 768px)"
@@ -245,11 +243,6 @@
           <h2 class="savings__h2 h2">
             Économies potentielles grâce au calorifugeage
           </h2>
-          <!-- <img
-            src="./Images/content_images/savecp.jpg"
-            alt="Exemple d'économie d'énergie grâce au calorifugeage"
-            class="content__img"
-          /> -->
           <picture>
             <source
               media="(max-width: 768px)"
@@ -265,7 +258,7 @@
             />
             <img
               src="./Images/content_images/savecp992+.webp"
-              alt="Description de l'image de sauvegarde"
+              alt="Exemple d'économie d'énergie grâce au calorifugeage"
               class="content__img"
               loading="lazy"
             />
@@ -330,7 +323,7 @@
             />
             <img
               src="./Images/content_images/why992+.webp"
-              alt="Description de l'image why"
+              alt="Pourquoi le calorifugeage est crucial en 2024"
               class="content__img"
               loading="lazy"
             />
@@ -433,6 +426,7 @@
           <a
             href="mailto:contact@calorifugeage-france.com;"
             class="footer__link"
+            aria-label="Envoyer un email à contact@calorifugeage-france.com"
             >contact@calorifugeage-france.com</a
           >
         </div>
@@ -451,6 +445,5 @@
         </div>
       </div>
     </footer>
-    <script src="script.js" defer></script>
   </body>
 </html>
