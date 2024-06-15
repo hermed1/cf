@@ -8,7 +8,7 @@
       content="Contactez Calorifugeage France pour obtenir votre devis gratuit et personnalisé pour vos travaux de calorifugeage. Optimisez l'isolation de votre tuyauterie et réduisez vos factures d'énergie dès maintenant."
     />
     <link rel="stylesheet" href="main.css" />
-    <title>Contact - Calorifugeage France</title>
+    <title>Contact</title>
     <script
       src="https://kit.fontawesome.com/03e4bd3b07.js"
       crossorigin="anonymous"
@@ -100,8 +100,7 @@
     </header>
     <main class="contact__main">
       <form id="contact-form" method="post" class="form">
-        <div class="form-group">
-          <label for="raison_sociale" class="sr-only">Raison sociale</label>
+        <label for="raison_sociale">
           <input
             id="raison_sociale"
             type="text"
@@ -109,9 +108,8 @@
             class="form__input"
             aria-label="Raison sociale"
           />
-        </div>
-        <div class="form-group">
-          <label for="siret" class="sr-only">SIRET</label>
+        </label>
+        <label for="siret">
           <input
             id="siret"
             type="text"
@@ -119,7 +117,7 @@
             class="form__input"
             aria-label="SIRET"
           />
-        </div>
+        </label>
 
         <div class="gender-selection">
           <input
@@ -130,6 +128,7 @@
             class="gender-input"
             checked
             hidden
+            aria-label="Monsieur"
           />
           <label for="monsieur" class="gender-label">Monsieur</label>
 
@@ -140,12 +139,12 @@
             value="Madame"
             class="gender-input"
             hidden
+            aria-label="Madame"
           />
           <label for="madame" class="gender-label">Madame</label>
         </div>
 
-        <div class="form-group">
-          <label for="nom" class="sr-only">Nom</label>
+        <label for="nom">
           <input
             id="nom"
             class="form__input"
@@ -154,9 +153,8 @@
             aria-label="Nom"
             aria-required="true"
           />
-        </div>
-        <div class="form-group">
-          <label for="telephone" class="sr-only">Téléphone</label>
+        </label>
+        <label for="telephone">
           <input
             id="telephone"
             class="form__input"
@@ -165,9 +163,8 @@
             aria-label="Téléphone"
             aria-required="true"
           />
-        </div>
-        <div class="form-group">
-          <label for="email" class="sr-only">E-mail</label>
+        </label>
+        <label for="email">
           <input
             id="email"
             class="form__input"
@@ -176,7 +173,7 @@
             aria-label="E-mail"
             aria-required="true"
           />
-        </div>
+        </label>
 
         <div class="desired__time__container">
           <label for="horaire-début" class="desired__time__label"
@@ -192,6 +189,8 @@
               step="300"
               aria-label="Heure de début"
             />
+            <label for="horaire-fin" class="desired__time__label--no-show">
+            </label>
             <input
               type="time"
               id="horaire-fin"
@@ -203,8 +202,7 @@
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="message" class="sr-only">Message</label>
+        <label for="message">
           <textarea
             name="message"
             id="message"
@@ -214,7 +212,7 @@
             class="form__input form__textarea"
             aria-label="Message"
           ></textarea>
-        </div>
+        </label>
         <p class="privacy__policy__p">
           En soumettant ce formulaire, vous acceptez notre
           <a
@@ -225,8 +223,7 @@
             >politique de confidentialité.</a
           >
         </p>
-        <div class="form-group">
-          <label for="submit" class="sr-only">Envoyer</label>
+        <label for="submit" class="submit__label__container">
           <input
             id="submit"
             class="form__input form__input--submit cta"
@@ -234,7 +231,7 @@
             value="Envoyer"
             aria-label="Envoyer"
           />
-        </div>
+        </label>
       </form>
     </main>
     <footer class="footer">
