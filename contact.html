@@ -200,15 +200,15 @@
               value="09:00"
               step="300"
             />
-            <!-- </label> -->
             <label for="horaire-fin">
-              <span class="hidden">Heure de fin</span>
+              <span class="hidden" id="label-horaire-fin">Heure de fin</span>
               <input
                 type="time"
                 id="horaire-fin"
                 name="horaire-fin"
                 value="18:30"
                 class="form__input desired__time__input"
+                aria-labelledby="label-horaire-fin"
               />
             </label>
           </div>
