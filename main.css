@@ -1175,6 +1175,9 @@ p {
   border: 2px solid lightgray;
   padding-left: 15px;
 }
+.form .submit__label__container {
+  width: 50%;
+}
 @media screen and (min-width: 992px) {
   .form .submit__label__container {
     width: 30%;
@@ -1231,9 +1234,6 @@ p {
   .desired__time__label {
     width: 400px !important;
   }
-}
-.desired__time__label--no-show {
-  width: 50px !important;
 }
 .desired__time__container {
   width: 100%;

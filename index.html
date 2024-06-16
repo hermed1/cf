@@ -236,7 +236,7 @@
             </button>
           </div>
           <div class="comprendre__image__container">
-            <img
+            <!-- <img
               src="./Images/banners/toitcp.png"
               alt="Calorifugeage professionnel"
               class="comprendre__image"
@@ -249,7 +249,27 @@
                    (max-width: 992px) 992px,
                    100vw"
               loading="lazy"
-            />
+            /> -->
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="./Images/banners/toitcp768.png"
+              />
+              <source
+                media="(max-width: 992px)"
+                srcset="./Images/banners/toitcp992.png"
+              />
+              <source
+                media="(min-width: 993px)"
+                srcset="./Images/banners/toitcp.png"
+              />
+              <img
+                src="./Images/banners/toitcp.png"
+                alt="Calorifugeage professionnel"
+                class="comprendre__image"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
         <div class="card__container">

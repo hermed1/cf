@@ -100,6 +100,7 @@
   }
 }
 .form .submit__label__container {
+  width: 50%;
   @media screen and (min-width: 992px) {
     width: 30%;
   }
@@ -154,9 +155,6 @@
   &__label {
     @media screen and (min-width: 992px) {
       width: 400px !important;
-    }
-    &--no-show {
-      width: 50px !important;
     }
   }
   &__container {
