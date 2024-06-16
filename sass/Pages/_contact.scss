@@ -68,6 +68,10 @@
   display: flex;
   justify-content: center;
   padding: 0 20px;
+  margin-top: -30px;
+  @media screen and (min-width: 992px) {
+    margin-top: 0px;
+  }
 }
 
 .form label {
