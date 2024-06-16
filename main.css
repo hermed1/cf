@@ -1179,7 +1179,7 @@ p {
   }
 }
 .form__input {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
   border-radius: 5px;
   padding: 10px;
@@ -1199,7 +1199,7 @@ p {
   display: flex;
   justify-content: start;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   border-radius: 5px;
 }
 
@@ -1231,6 +1231,10 @@ p {
   color: #0b55ad;
 }
 
+.email-input {
+  margin-bottom: 20px;
+}
+
 .desired__time__input {
   margin-bottom: 0;
   width: 100%;
@@ -1240,7 +1244,7 @@ p {
   width: 100%;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 992px) {
   .desired__time__label {
