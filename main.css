@@ -52,6 +52,12 @@ h6 {
   font-weight: normal;
 }
 
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Pour tous les navigateurs supportant ::placeholder */
 .home ::-moz-placeholder {
   color: #ffffff;

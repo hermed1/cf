@@ -7,7 +7,7 @@
       name="description"
       content="Contactez Calorifugeage France pour obtenir votre devis gratuit et personnalisé pour vos travaux de calorifugeage. Optimisez l'isolation de votre tuyauterie et réduisez vos factures d'énergie dès maintenant."
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css" preload />
     <title>Contact</title>
     <script
       src="https://kit.fontawesome.com/03e4bd3b07.js"
@@ -20,18 +20,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding: 0;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
-      }
-    </style>
   </head>
   <body class="contact">
     <header class="contact__header">
@@ -133,7 +121,7 @@
 
         <div class="gender-selection">
           <fieldset class="gender-selection">
-            <legend><span class="hidden">Civilité</span></legend>
+            <legend class="hidden"><span class="hidden">Civilité</span></legend>
             <input
               type="radio"
               id="monsieur"
