@@ -4,6 +4,10 @@
   visibility: hidden;
 }
 
+.link-underline {
+  text-decoration: underline;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -309,8 +313,10 @@ p {
   .form__container {
     top: auto;
     left: auto;
-    top: 3vh;
-    right: 15%;
+    top: 5%;
+    right: 10%;
+    height: 90%;
+    width: 300px;
   }
 }
 
@@ -364,6 +370,9 @@ p {
 @media screen and (min-width: 992px) {
   .banner__form {
     transform: none;
+    width: 100%;
+    min-width: 0;
+    top: 0;
   }
 }
 .banner__form__h1 {
@@ -400,7 +409,7 @@ p {
 .banner__form__input {
   cursor: pointer;
   margin-bottom: 15px;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 20px;
   border: 2px solid #ffffff;
   background-color: transparent;
@@ -428,7 +437,7 @@ p {
 }
 @media screen and (min-width: 992px) {
   .banner__form__title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
   }
 }
@@ -730,6 +739,11 @@ p {
   height: 45px;
   margin-top: 20px;
 }
+@media screen and (min-width: 992px) {
+  .footer__img {
+    width: 350px;
+  }
+}
 .footer__img__container {
   padding-left: 20px;
 }
@@ -760,7 +774,7 @@ p {
   display: none; /* Ajouté ici pour le cacher initialement */
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 100px;
   z-index: 1000;
   padding: 10px 15px;
   background-color: #f46d21;
